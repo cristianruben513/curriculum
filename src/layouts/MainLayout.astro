@@ -1,0 +1,16 @@
+---
+import Seo from "@/components/Seo.astro"
+
+const lang = Astro.currentLocale
+---
+
+<html lang={lang}>
+  <head>
+    <Seo />
+  </head>
+  <body class="w-full">
+    <main class='w-[700px] mx-auto max-w-full md:py-14 py-8'>
+      <slot />
+    </main>
+  </body>
+</html>

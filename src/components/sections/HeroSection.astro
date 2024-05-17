@@ -1,0 +1,49 @@
+---
+import clsx from "clsx"
+import SocialIcons from "../SocialIcons.astro"
+
+import { useTranslate } from "@/i18n/utils"
+
+const lang = Astro.currentLocale
+const t = useTranslate(lang)
+---
+
+<div
+  class={clsx(
+    "flex md:flex-row flex-col print:flex-row",
+    "items-start md:items-center md:justify-between",
+    "gap-10 mb-10 md:mb-12 mx-6 lg:mx-0 ",
+    "print:mb-2 print:gap-6",
+  )}
+>
+  <div>
+    <h1
+      class={clsx(
+        "font-bold text-black print:mb-5",
+        "text-[22px] md:text-2xl print:text-[28px]",
+      )}
+    >
+      Cristian Rubén Figueroa Espinoza
+    </h1>
+
+    <div class='flex flex-col'>
+      <h2
+        class={clsx(
+          "my-3 mb-1 print:my-1.5 text-sm print:mb-4 text-pretty font-mono",
+          "max-w-md print:max-w-sm",
+          "print:text-[rgb(78,78,78)]",
+        )}
+      >
+        {t("DESCRIPTION")}
+      </h2>
+
+      <SocialIcons />
+    </div>
+  </div>
+  <img
+    src='/avatar.webp'
+    alt='portrait'
+    loading='eager'
+    class='md:size-36 size-40 print:size-[152px] print:mt-16 rounded-xl'
+  />
+</div>

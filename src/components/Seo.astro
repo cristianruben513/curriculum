@@ -1,0 +1,35 @@
+---
+import { useTranslate } from "@/i18n/utils"
+
+const lang = Astro.currentLocale
+const t = useTranslate(lang)
+
+const url = "https://cristian-curriculum.vercel.app"
+const image = `${url}/og-image.webp`
+const twitter = "@RubenFigue513"
+---
+
+<meta charset='utf-8' />
+<link rel='icon' type='image/svg+xml' href='/favicon.ico' />
+<meta name='viewport' content='width=device-width' />
+<meta name='generator' content={Astro.generator} />
+
+<!-- Open Graph Tags -->
+<meta property='og:title' content={t("TITLE")} />
+<meta property='og:type' content='website' />
+<meta property='og:url' content={url} />
+<meta property='og:image' content={image} />
+<meta property='og:description' content={t("DESCRIPTION")} />
+
+<!-- Twitter Card Tags -->
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:site' content={twitter} />
+<meta name='twitter:creator' content={twitter} />
+<meta name='twitter:title' content={t("TITLE")} />
+<meta name='twitter:description' content={t("DESCRIPTION")} />
+<meta name='twitter:image' content={image} />
+
+<!-- Primary Meta Tags -->
+<meta name='title' content={t("TITLE")} />
+<meta name='description' content={t("DESCRIPTION")} />
+<title>{t("TITLE")}</title>

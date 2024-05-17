@@ -1,0 +1,21 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro"
+
+import AboutSection from "../sections/AboutSection.astro"
+import EducationSection from "../sections/EducationSection.astro"
+import ExperienceSection from "../sections/ExperienceSection.astro"
+import HeroSection from "../sections/HeroSection.astro"
+import ProjectsSection from "../sections/ProjectsSection.astro"
+import SkillsSection from "../sections/SkillsSection.astro"
+---
+
+<MainLayout>
+  <HeroSection />
+  <AboutSection />
+  <div class='print:hidden'>
+    <ProjectsSection />
+  </div>
+  <ExperienceSection />
+  <EducationSection />
+  <SkillsSection />
+</MainLayout>
