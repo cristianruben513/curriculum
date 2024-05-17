@@ -1,0 +1,10 @@
+@media print {
+  astro-dev-toolbar {
+    display: none !important;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
+}

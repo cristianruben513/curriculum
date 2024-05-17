@@ -13,7 +13,7 @@ const t = useTranslate(lang)
     "flex md:flex-row flex-col print:flex-row",
     "items-start md:items-center md:justify-between",
     "gap-10 mb-10 md:mb-12 mx-6 lg:mx-0 ",
-    "print:mb-2 print:gap-6",
+    "print:mb-2 print:gap-6 print:mt-[40px]",
   )}
 >
   <div>
@@ -21,6 +21,7 @@ const t = useTranslate(lang)
       class={clsx(
         "font-bold text-black print:mb-5",
         "text-[22px] md:text-2xl print:text-[28px]",
+        "text-balance"
       )}
     >
       Cristian Rubén Figueroa Espinoza
@@ -30,7 +31,7 @@ const t = useTranslate(lang)
       <h2
         class={clsx(
           "my-3 mb-1 print:my-1.5 text-sm print:mb-4 text-pretty font-mono",
-          "max-w-md print:max-w-sm",
+          "max-w-md print:max-w-sm leading-relaxed",
           "print:text-[rgb(78,78,78)]",
         )}
       >

@@ -1,0 +1,12 @@
+---
+import { useTranslate } from "@/i18n/utils";
+import Section from "../Section.astro";
+
+const t = useTranslate(Astro.currentLocale);
+---
+
+<Section title="Sobre mi">
+  <p class="leading-relaxed print:mt-1 font-mono text-sm text-pretty">
+    {t("ABOUT_ME")}
+  </p>
+</Section>

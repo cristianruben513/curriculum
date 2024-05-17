@@ -1,0 +1,14 @@
+---
+import clsx from "clsx"
+
+const { name } = Astro.props
+---
+
+<div
+  class={clsx(
+    "flex p-2 py-0.5 justify-center items-center border",
+    "print:border-neutral-700/60 rounded-md border-neutral-700/10 bg-neutral-400/10",
+  )}
+>
+  <p class='text-sm print:text-xs font-mono'>{name}</p>
+</div>

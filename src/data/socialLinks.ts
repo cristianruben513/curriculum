@@ -48,8 +48,8 @@ export const socialLinks: SocialLinkProp[] = [
   },
   {
     name: "Website",
-    url: "https://cristianfigueroa.dev",
-    print: "www.cristianfigueroa.dev",
+    url: "https://cristian.digital",
+    print: "www.cristian.digital",
     icon: WorldMap,
     visible: false,
   },
