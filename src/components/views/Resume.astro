@@ -5,13 +5,27 @@ import AboutSection from "../sections/AboutSection.astro"
 import EducationSection from "../sections/EducationSection.astro"
 import ExperienceSection from "../sections/ExperienceSection.astro"
 import HeroSection from "../sections/HeroSection.astro"
+import PhotoSection from "../sections/PhotoSection.astro"
 import SkillsSection from "../sections/SkillsSection.astro"
+import LanguagesSection from "../sections/LanguagesSection.astro"
+import CertificationsSection from "../sections/CertificationsSection.astro"
+import AptitudesSection from "../sections/AptitudesSection.astro"
 ---
 
 <MainLayout>
-  <HeroSection />
-  <AboutSection />
-  <ExperienceSection />
-  <EducationSection />
-  <SkillsSection />
+  <div class='md:grid print:grid flex flex-col-reverse print:grid-cols-12 md:grid-cols-12 md:gap-12 print:gap-0 relative'>
+    <section class='md:col-span-3 print:col-span-3 print:ml-[10px]'>
+      <PhotoSection />
+      <SkillsSection />
+      <AptitudesSection />
+      <LanguagesSection />
+    </section>
+    <section class='md:col-span-9 print:col-span-9 print:ml-[20px]'>
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <EducationSection />
+      <CertificationsSection />
+    </section>
+  </div>
 </MainLayout>

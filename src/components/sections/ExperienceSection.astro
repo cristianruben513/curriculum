@@ -17,13 +17,14 @@ const t = useTranslate(lang)
 
         return (
           <div class='print:p-0'>
-            <header class='flex justify-between items-center'>
+            <header class='flex md:justify-between items-center'>
               <h3 class='font-bold print:text-sm text-neutral-600'>
                 {company} - {title}
               </h3>
+              <span class='mx-3 md:hidden'>&bullet;</span>
               <span class='text-neutral-600 text-xs font-mono'>{start}</span>
             </header>
-            <footer class='text-sm mt-2 leading-relaxed print:mt-1 font-mono text-pretty'>
+            <footer class='text-sm print:text-[12px] mt-2 leading-relaxed print:mt-1 font-mono text-pretty'>
               <p>
                 {lang === "en" && description.en}
                 {lang === "es" && description.es}

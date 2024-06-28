@@ -10,13 +10,13 @@ import Download from "./icons/Download.astro"
         href={link.url}
         target='_blank'
         class:list={[
-          "border p-1 py-0.5 group rounded-lg print:rounded-md border-neutral-700/20 bg-neutral-400/10 flex gap-2 items-center justify-center",
+          "border p-2 print:p-1 print:px-3 group rounded-lg print:rounded-md border-neutral-700/20 bg-neutral-400/10 flex gap-2 items-center justify-center",
           link.printable === false && "print:hidden",
           link.visible === false && "hidden print:flex",
         ]}
       >
         <link.icon
-          width='16'
+          width='18'
           class='print:w-3 group-hover:text-black transition duration-300 print:text-neutral-800'
         />
         <span class='sr-only'>Go to my {link.name}</span>
@@ -27,7 +27,7 @@ import Download from "./icons/Download.astro"
   <a
     href='/cristian-ruben-resume.pdf'
     target='_blank'
-    class='border p-1 py-0.5 group rounded-lg print:rounded-md border-neutral-700/20 bg-neutral-400/10 flex gap-2 print:hidden justify-center items-center'
+    class='border p-1 px-2.5 group rounded-lg print:rounded-md border-neutral-700/20 bg-neutral-400/10 flex gap-2 print:hidden justify-center items-center'
   >
     <Download
       width='16'

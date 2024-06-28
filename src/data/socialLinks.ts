@@ -30,7 +30,7 @@ export const socialLinks: SocialLinkProp[] = [
   {
     name: "Whatsapp",
     url: "https://wa.me/+523339632525",
-    print: "+52 333-963-2525",
+    print: "333-963-2525",
     icon: Whatsapp,
   },
   {
@@ -49,7 +49,7 @@ export const socialLinks: SocialLinkProp[] = [
   {
     name: "Website",
     url: "https://cristian.digital",
-    print: "www.cristian.digital",
+    print: "cristian.digital",
     icon: WorldMap,
     visible: false,
   },

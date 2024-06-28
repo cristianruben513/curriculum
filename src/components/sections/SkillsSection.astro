@@ -9,8 +9,8 @@ import { useTranslate } from "@/i18n/utils"
 const t = useTranslate(Astro.currentLocale)
 ---
 
-<Section title={t("SKILLS_TEXT")}>
-  <div class='flex flex-wrap gap-3 print:mt-5 mt-2'>
+<Section class="print:mt-[80px] print:mx-0" title={t("SKILLS_TEXT")}>
+  <div class='flex flex-wrap gap-3 print:gap-y-2 print:mt-5 mt-2'>
     {stack.map((tag) => <SkillCard name={tag} />)}
   </div>
 </Section>

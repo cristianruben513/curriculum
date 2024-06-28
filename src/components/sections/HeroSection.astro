@@ -12,16 +12,22 @@ const t = useTranslate(lang)
   class={clsx(
     "flex md:flex-row flex-col print:flex-row",
     "items-start md:items-center md:justify-between",
-    "gap-10 mb-10 md:mb-12 mx-6 lg:mx-0 ",
-    "print:mb-2 print:gap-6 print:mt-[40px]",
+    "gap-10 mb-10 md:mb-6 mx-6 lg:mx-0 ",
+    "print:mb-2 print:gap-6 print:mt-[30px]",
   )}
 >
+  <img
+    src='/avatar.webp'
+    alt='portrait'
+    loading='eager'
+    class='md:size-36 size-40 print:size-[152px] print:mt-[40px] rounded-xl flex md:hidden print:hidden'
+  />
   <div>
     <h1
       class={clsx(
-        "font-bold text-black print:mb-5",
+        "font-bold text-black print:mb-3",
         "text-[22px] md:text-2xl print:text-[28px]",
-        "text-balance"
+        "text-balance",
       )}
     >
       Cristian Rubén Figueroa Espinoza
@@ -30,9 +36,9 @@ const t = useTranslate(lang)
     <div class='flex flex-col'>
       <h2
         class={clsx(
-          "my-3 mb-1 print:my-1.5 text-sm print:mb-4 text-pretty font-mono",
-          "max-w-md print:max-w-sm leading-relaxed",
-          "print:text-[rgb(78,78,78)]",
+          "my-3 mb-1 print:my-1 text-sm print:mb-4 text-pretty font-mono",
+          "max-w-lg print:max-w-md leading-relaxed",
+          "print:text-[rgb(47,47,47)]",
         )}
       >
         {t("DESCRIPTION")}
@@ -41,10 +47,4 @@ const t = useTranslate(lang)
       <SocialIcons />
     </div>
   </div>
-  <img
-    src='/avatar.webp'
-    alt='portrait'
-    loading='eager'
-    class='md:size-36 size-40 print:size-[152px] print:mt-16 rounded-xl'
-  />
 </div>

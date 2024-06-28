@@ -35,7 +35,7 @@ export const resume: Resumen = {
     {
       title: "Ingenieria en software",
       start: "2021",
-      end: "Actualidad",
+      end: "Ahora",
       place: "Universidad Politecnica de Pénjamo",
       country: "Gto, Mexico",
     },
@@ -50,10 +50,10 @@ export const resume: Resumen = {
   experience: [
     {
       company: "Dorichangos",
-      start: "2023",
+      start: "2022 - 2023",
       title: "Freelancer",
       description: {
-        es: "Desarrollé una plataforma de comercio electrónico para Dorichangos, permitiendo a los usuarios comprar productos de manera sencilla. Implementé un dashboard integral para la administración eficiente de productos y pedidos, mejorando la eficacia operativa de la empresa.",
+        es: "Desarrollé una plataforma de ecommerce para Dorichangos, permitiendo a los usuarios comprar de manera sencilla. Implementé un dashboard para la administración eficiente de pedidos, mejorando la eficacia del negocio",
         en: "I developed an e-commerce platform for Dorichangos, enabling users to easily purchase products. Implemented a comprehensive dashboard for efficient product and order management, enhancing the operational effectiveness of the company."
       },
       achievements: {
@@ -71,15 +71,12 @@ export const resume: Resumen = {
   stack: [
     "HTML",
     "CSS",
-    "JS",
-    "TS",
+    "JS/TS",
     "React",
-    "Astro",
-    "NextJS",
-    "NodeJS",
-    "Git",
-    "GitHub",
-    "Tailwind",
     "SQL",
+    "Astro",
+    "NodeJS",
+    "Git/Github",
+    "Tailwind",
   ],
 }
