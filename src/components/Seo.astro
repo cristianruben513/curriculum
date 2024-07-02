@@ -1,7 +1,10 @@
 ---
+import { resume } from "@/data/resume"
 import { useTranslate } from "@/i18n/utils"
 
 const lang = Astro.currentLocale
+const desc = lang === "en" ? resume.description.en : resume.description.es
+
 const t = useTranslate(lang)
 
 const url = "https://cristian-curriculum.vercel.app"
@@ -19,17 +22,17 @@ const twitter = "@RubenFigue513"
 <meta property='og:type' content='website' />
 <meta property='og:url' content={url} />
 <meta property='og:image' content={image} />
-<meta property='og:description' content={t("DESCRIPTION")} />
+<meta property='og:description' content={desc} />
 
 <!-- Twitter Card Tags -->
 <meta name='twitter:card' content='summary_large_image' />
 <meta name='twitter:site' content={twitter} />
 <meta name='twitter:creator' content={twitter} />
 <meta name='twitter:title' content={t("TITLE")} />
-<meta name='twitter:description' content={t("DESCRIPTION")} />
+<meta name='twitter:description' content={desc} />
 <meta name='twitter:image' content={image} />
 
 <!-- Primary Meta Tags -->
 <meta name='title' content={t("TITLE")} />
-<meta name='description' content={t("DESCRIPTION")} />
+<meta name='description' content={desc} />
 <title>{t("TITLE")}</title>

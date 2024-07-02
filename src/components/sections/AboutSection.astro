@@ -1,12 +1,13 @@
 ---
-import { useTranslate } from "@/i18n/utils";
-import Section from "../Section.astro";
+import { resume } from "@/data/resume"
+import Section from "../Section.astro"
 
-const t = useTranslate(Astro.currentLocale);
+const lang = Astro.currentLocale
 ---
 
-<Section title="Sobre mi">
-  <p class="leading-relaxed print:mt-1 font-mono text-sm print:text-[12px] text-pretty">
-    {t("ABOUT_ME")}
+<Section title='Sobre mi'>
+  <p class='print:mt-1 font-size-content'>
+    {lang === "en" && resume.aboutMe.en}
+    {lang === "es" && resume.aboutMe.es}
   </p>
 </Section>

@@ -4,17 +4,9 @@ import Mail from "@/components/icons/Mail.astro"
 import Whatsapp from "@/components/icons/Whatsapp.astro"
 import WorldMap from "@/components/icons/WorldMap.astro"
 import X from "@/components/icons/X.astro"
+import type { SocialLink } from "@/types/socialLink"
 
-export interface SocialLinkProp {
-  name: string
-  url: string
-  print: string
-  icon: any
-  printable?: boolean
-  visible?: boolean
-}
-
-export const socialLinks: SocialLinkProp[] = [
+export const socialLinks: SocialLink[] = [
   {
     name: "Github",
     url: "https://github.com/cristian51310",

@@ -1,6 +1,9 @@
 ---
 import { socialLinks } from "@/data/socialLinks"
 import Download from "./icons/Download.astro"
+import { useTranslate } from "@/i18n/utils"
+
+const t = useTranslate(Astro.currentLocale)
 ---
 
 <div class='flex flex-wrap gap-2 md:gap-3 mt-3 print:gap-3 print:mt-1'>
@@ -33,6 +36,6 @@ import Download from "./icons/Download.astro"
       width='16'
       class='w-3 print:w-3 group-hover:text-black transition duration-300'
     />
-    <span class='text-sm'>Descargar CV</span>
+    <span class='text-sm'>{t("DOWNLOAD_CV")}</span>
   </a>
 </div>

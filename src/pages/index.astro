@@ -1,5 +1,33 @@
 ---
-import Resume from "../components/views/Resume.astro";
+import MainLayout from "@/layouts/MainLayout.astro"
+
+import AboutSection from "@/components/sections/AboutSection.astro"
+import AptitudesSection from "@/components/sections/AptitudesSection.astro"
+import CertificationsSection from "@/components/sections/CertificationsSection.astro"
+import EducationSection from "@/components/sections/EducationSection.astro"
+import ExperienceSection from "@/components/sections/ExperienceSection.astro"
+import HeroSection from "@/components/sections/HeroSection.astro"
+import LanguagesSection from "@/components/sections/LanguagesSection.astro"
+import PhotoSection from "@/components/sections/PhotoSection.astro"
+import SkillsSection from "@/components/sections/SkillsSection.astro"
 ---
 
-<Resume />
+<MainLayout>
+  <div
+    class='md:grid print:grid flex flex-col-reverse print:grid-cols-12 md:grid-cols-12 md:gap-12 print:gap-0 relative'
+  >
+    <section class='md:col-span-3 print:col-span-3 print:ml-[10px]'>
+      <PhotoSection />
+      <SkillsSection />
+      <AptitudesSection />
+      <LanguagesSection />
+    </section>
+    <section class='md:col-span-9 print:col-span-9 print:ml-[20px]'>
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
+      <EducationSection />
+      <CertificationsSection />
+    </section>
+  </div>
+</MainLayout>

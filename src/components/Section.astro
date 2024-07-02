@@ -1,17 +1,15 @@
 ---
 interface Props {
   title: string
-  subtitle?: string
   class?: string
 }
 
-const { title, subtitle, class: className } = Astro.props
+const { title, class: className } = Astro.props
 ---
 
 <div class:list={["mx-6 lg:mx-0 mt-10 print:mt-6 flex flex-col", className]}>
-  <h2 class='text-lg font-bold mb-3 print:mb-0 print:text-[16px] text-emerald-700'>
+  <h2 class='font-size-subtitle mb-3 print:mb-0 text-emerald-700'>
     {title}
   </h2>
-  {subtitle && <h3 class='mb-6'>{subtitle}</h3>}
   <slot />
 </div>

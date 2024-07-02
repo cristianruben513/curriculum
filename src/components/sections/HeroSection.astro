@@ -1,11 +1,9 @@
 ---
+import { resume } from "@/data/resume"
 import clsx from "clsx"
 import SocialIcons from "../SocialIcons.astro"
 
-import { useTranslate } from "@/i18n/utils"
-
 const lang = Astro.currentLocale
-const t = useTranslate(lang)
 ---
 
 <div
@@ -23,25 +21,18 @@ const t = useTranslate(lang)
     class='md:size-36 size-40 print:size-[152px] print:mt-[40px] rounded-xl flex md:hidden print:hidden'
   />
   <div>
-    <h1
-      class={clsx(
-        "font-bold text-black print:mb-3",
-        "text-[22px] md:text-2xl print:text-[28px]",
-        "text-balance",
-      )}
-    >
-      Cristian Rubén Figueroa Espinoza
-    </h1>
+    <h1 class='font-size-title'>{resume.name}</h1>
 
     <div class='flex flex-col'>
       <h2
         class={clsx(
-          "my-3 mb-1 print:my-1 text-sm print:mb-4 text-pretty font-mono",
+          "my-3 mb-1 print:my-1 text-sm print:mb-4 font-mono",
           "max-w-lg print:max-w-md leading-relaxed",
           "print:text-[rgb(47,47,47)]",
         )}
       >
-        {t("DESCRIPTION")}
+        {lang === "en" && resume.description.en}
+        {lang === "es" && resume.description.es}
       </h2>
 
       <SocialIcons />
