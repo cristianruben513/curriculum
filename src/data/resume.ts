@@ -27,14 +27,14 @@ export const resume: Resume = {
       start: "2021",
       end: "Ahora",
       place: "Universidad Politecnica de Pénjamo",
-      country: "Gto, Mexico",
+      country: "Guanajuato, Mexico",
     },
     {
       title: "Tecnico en programacion",
       start: "2019",
       end: "2021",
-      place: "Centro de bachillerato tecnologico industrial y de servicios 171",
-      country: "Gto, Mexico",
+      place: "CBTIS 171 'Mariano Abasolo'",
+      country: "Guanajuato, Mexico",
     },
   ],
   aptitudes: [

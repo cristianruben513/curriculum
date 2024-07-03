@@ -10,29 +10,24 @@ const t = useTranslate(lang)
 ---
 
 <Section title={t("EXPERIENCE_TEXT")}>
-  <div class='flex flex-col gap-4 mt-2'>
+  <ol class='relative border-s border-sky-300 mt-4'>
     {
-      experience.map((job) => {
-        const { company, start, title, description } = job
-
-        return (
-          <div class='print:p-0'>
-            <header class='flex md:justify-between items-center'>
-              <h3 class='font-bold print:text-sm text-neutral-600'>
-                {company} - {title}
-              </h3>
-              <span class='mx-3 md:hidden'>&bullet;</span>
-              <span class='text-neutral-600 text-xs font-mono'>{start}</span>
-            </header>
-            <footer class='font-size-content mt-2 leading-relaxed print:mt-1 '>
-              <p>
-                {lang === "en" && description.en}
-                {lang === "es" && description.es}
-              </p>
-            </footer>
+      experience.map(({ company, start, title, description }) => (
+        <li class='my-0 ms-5'>
+          <div class='absolute size-3 print:size-2 bg-sky-300 rounded-full print:mt-2 mt-1.5 -start-1.5 print:-start-1 border border-white print:border-sky-300' />
+          <div class='flex items-center gap-5'>
+            <h3 class='font-bold print:text-sm text-neutral-600'>
+              {company} - {title}
+            </h3>
+            &bullet;
+            <time class='text-xs print:text-[10px] text-sky-700'>{start}</time>
           </div>
-        )
-      })
+          <p class='font-size-content text-neutral-700 mt-2'>
+            {lang === "en" && description.en}
+            {lang === "es" && description.es}
+          </p>
+        </li>
+      ))
     }
-  </div>
+  </ol>
 </Section>
