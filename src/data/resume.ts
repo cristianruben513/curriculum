@@ -7,7 +7,7 @@ export const resume: Resume = {
     en: "Software Engineer with +3 years of experience in the development of web applications and backend services."
   },
   aboutMe: {
-    es: "Programo desde los 16 años, soy un ingeniero en software y me especializo en desarrollo web, con alta experiencia en UI/UX. Actualmente, estoy ampliando mis habilidades en infraestructura, DevOps y optimización.",
+    es: "Programo desde los 16 años, soy ingeniero en software y me especializo en desarrollo web, con alta experiencia en UI/UX. Actualmente, estoy ampliando mis habilidades en infraestructura, DevOps y optimización.",
     en: "I have been programming since I was 16 years old, I am a software engineer and I specialize in web development, with extensive experience in UI/UX. Currently, I am expanding my skills in infrastructure, DevOps and optimization."
   },
   experience: [
@@ -54,5 +54,6 @@ export const resume: Resume = {
     "NodeJS",
     "Git/Github",
     "Tailwind",
+    "MongoDB"
   ],
 }
