@@ -16,8 +16,8 @@ export const resume: Resume = {
       start: "2022 - 2023",
       title: "Freelancer",
       description: {
-        es: "Desarrollé una plataforma de ecommerce para Dorichangos, permitiendo a los usuarios comprar de manera sencilla. Implementé un dashboard para la administración eficiente de pedidos, mejorando la eficacia del negocio",
-        en: "I developed an e-commerce platform for Dorichangos, enabling users to easily purchase products. Implemented a comprehensive dashboard for efficient product and order management, enhancing the operational effectiveness of the company."
+        es: "Desarrollé una plataforma de ecommerce para Dorichangos, permitiendo comprar de manera sencilla. Implementé un dashboard para la administración eficiente de pedidos, mejorando la eficacia del negocio",
+        en: "I developed an e-commerce platform for Dorichangos, enabling easily purchase products. Implemented a comprehensive dashboard for efficient product and order management, enhancing the operational effectiveness of the company."
       },
     },
   ],
@@ -42,6 +42,7 @@ export const resume: Resume = {
     "Iniciativa",
     "Comunicacion efectiva",
     "Disciplina",
+    "Autodidacta",
   ],
   stack: [
     "HTML",

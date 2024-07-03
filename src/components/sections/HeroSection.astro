@@ -17,25 +17,17 @@ const lang = Astro.currentLocale
   <img
     src='/avatar.webp'
     alt='portrait'
-    loading='eager'
-    class='md:size-36 size-40 print:size-[152px] print:mt-[40px] rounded-xl flex md:hidden print:hidden'
+    class='md:size-36 size-40 rounded-xl flex md:hidden print:hidden'
   />
-  <div>
+
+  <div class='grid gap-2 print:gap-3'>
     <h1 class='font-size-title'>{resume.name}</h1>
 
-    <div class='flex flex-col'>
-      <h2
-        class={clsx(
-          "my-3 mb-1 print:my-1 text-sm print:mb-4 font-mono",
-          "max-w-lg print:max-w-md leading-relaxed",
-          "print:text-[rgb(47,47,47)]",
-        )}
-      >
-        {lang === "en" && resume.description.en}
-        {lang === "es" && resume.description.es}
-      </h2>
+    <h2 class='text-sm font-mono max-w-lg leading-relaxed mb-0'>
+      {lang === "en" && resume.description.en}
+      {lang === "es" && resume.description.es}
+    </h2>
 
-      <SocialIcons />
-    </div>
+    <SocialIcons />
   </div>
 </div>
