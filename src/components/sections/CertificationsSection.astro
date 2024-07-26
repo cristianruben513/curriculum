@@ -1,18 +1,34 @@
 ---
 import Section from "../Section.astro"
+
+const certifications = [
+  {
+    title: "Digital NAO - TEC Milenio",
+    description: "Certificacion en Full Stack Developer Core - BBVA",
+  },
+  {
+    title: "Conecta Empleo - Fundación BBVA",
+    description: "Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean",
+  },
+]
 ---
 
 <Section title='Certificaciones'>
-  <div class='flex flex-col gap-4 mt-2 print:mt-4'>
-    <section class='flex flex-col gap-2 print:gap-0 print:p-0'>
-      <header class='flex md:justify-between items-center'>
-        <h3 class='font-bold print:text-sm text-neutral-600'>
-          Digital NAO - TEC Milenio
-        </h3>
-      </header>
-      <footer class='text-sm print:text-[12px] print:mt-1 font-mono max-w-md'>
-        <p>Certificacion en Full Stack Developer Core - BBVA</p>
-      </footer>
-    </section>
+  <div class='flex flex-col gap-5 mt-2 print:mt-4 relative'>
+    {
+      certifications.map((certification) => (
+        <section class='flex flex-col print:p-0 ms-5'>
+          <div class='absolute size-3 print:size-2 bg-neutral-300 rounded-full print:mt-2 mt-1.5 -start-1.5 print:-start-1 border border-white print:border-neutral-300' />
+          <header class='flex md:justify-between items-center'>
+            <h3 class='font-bold print:text-sm text-neutral-600'>
+              {certification.description}
+            </h3>
+          </header>
+          <footer class='text-sm print:text-[12px] print:mt-1 max-w-md'>
+            <p>{certification.title}</p>
+          </footer>
+        </section>
+      ))
+    }
   </div>
 </Section>

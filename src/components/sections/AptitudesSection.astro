@@ -3,13 +3,13 @@ import Section from "@/components/Section.astro"
 import { resume } from "@/data/resume"
 ---
 
-<Section class='print:mx-0' title={"Aptitudes"}>
+<Section title={"Aptitudes"}>
   <div class='grid gap-2 print:mt-5'>
     {
       resume.aptitudes.map((aptitud) => (
         <p class='flex items-center gap-2 font-size-content'>
           <span class='font-bold'>&bullet;</span>
-          <span class='font-mono'>{aptitud}</span>
+          <span class=''>{aptitud}</span>
         </p>
       ))
     }

@@ -4,13 +4,13 @@
 
 @layer components {
   .font-size-title{
-    @apply text-[22px] md:text-2xl print:text-[28px] font-bold 
+    @apply text-[22px] font-bold 
   }
   .font-size-subtitle{
     @apply text-lg font-bold print:text-[16px]
   }
   .font-size-content{
-    @apply text-sm print:text-[12px] font-mono leading-relaxed
+    @apply text-sm print:text-[14px] leading-relaxed
   }
 }
 

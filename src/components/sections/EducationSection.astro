@@ -6,11 +6,11 @@ const { education } = resume
 ---
 
 <Section title='Formación Académica'>
-  <ol class='relative border-s border-sky-300 mt-4'>
+  <ol class='relative border-s border-neutral-300 mt-4'>
     {
       education.map(({ title, start, end, place, country }) => (
         <li class='mb-3 last:mb-0 ms-5'>
-          <div class='absolute size-3 print:size-2 bg-sky-300 rounded-full print:mt-2 mt-1.5 -start-1.5 print:-start-1 border border-white print:border-sky-300' />
+          <div class='absolute size-3 print:size-2 bg-neutral-300 rounded-full print:mt-2 mt-1.5 -start-1.5 print:-start-1 border border-white print:border-neutral-300' />
           <div class='flex items-center gap-5'>
             <h3 class='font-bold print:text-sm text-neutral-600'>{title}</h3>
             &bullet;

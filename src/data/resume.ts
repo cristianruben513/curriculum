@@ -3,18 +3,18 @@ import type { Resume } from "@/types/resume"
 export const resume: Resume = {
   name: "Cristian Ruben Figueroa Espinoza",
   description: {
-    es: "Ingeniero en Software con +3 años de experiencia en el desarrollo de aplicaciones web y servicios de backend.",
-    en: "Software Engineer with +3 years of experience in the development of web applications and backend services."
+    es: "Ingeniero en Software",
+    en: "Software Engineer"
   },
   aboutMe: {
-    es: "Programo desde los 16 años, soy ingeniero en software y me especializo en desarrollo web, con alta experiencia en UI/UX. Actualmente, estoy ampliando mis habilidades en infraestructura, DevOps y optimización.",
+    es: "Estudiante de Ingenieria en software con mas de 2 años de experiencia en desarrollo web frontend y backend como freelancer, destaco por mi sólida experiencia en diseño UI/UX. Actualmente, estoy ampliando mis competencias en infraestructura cloud, prácticas de DevOps y técnicas de optimización",
     en: "I have been programming since I was 16 years old, I am a software engineer and I specialize in web development, with extensive experience in UI/UX. Currently, I am expanding my skills in infrastructure, DevOps and optimization."
   },
   experience: [
     {
       company: "Dorichangos",
       start: "2022 - 2023",
-      title: "Freelancer",
+      title: "Desarrollador Fullstack",
       description: {
         es: "Desarrollé una plataforma de ecommerce para Dorichangos, permitiendo comprar de manera sencilla. Implementé un dashboard para la administración eficiente de pedidos, mejorando la eficacia del negocio",
         en: "I developed an e-commerce platform for Dorichangos, enabling easily purchase products. Implemented a comprehensive dashboard for efficient product and order management, enhancing the operational effectiveness of the company."

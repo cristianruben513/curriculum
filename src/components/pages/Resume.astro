@@ -1,5 +1,6 @@
 ---
-import MainLayout from "@/layouts/MainLayout.astro"
+import Seo from "@/components/Seo.astro"
+import "@/layouts/main.css"
 
 import AboutSection from "@/components/sections/AboutSection.astro"
 import AptitudesSection from "@/components/sections/AptitudesSection.astro"
@@ -8,26 +9,29 @@ import EducationSection from "@/components/sections/EducationSection.astro"
 import ExperienceSection from "@/components/sections/ExperienceSection.astro"
 import HeroSection from "@/components/sections/HeroSection.astro"
 import LanguagesSection from "@/components/sections/LanguagesSection.astro"
-import PhotoSection from "@/components/sections/PhotoSection.astro"
 import SkillsSection from "@/components/sections/SkillsSection.astro"
+
+const lang = Astro.currentLocale
 ---
 
-<MainLayout>
-  <div
-    class='md:grid print:grid flex flex-col-reverse print:grid-cols-12 md:grid-cols-12 md:gap-12 print:gap-0 relative'
-  >
-    <section class='md:col-span-3 print:col-span-3 print:ml-[10px]'>
-      <PhotoSection />
-      <SkillsSection />
-      <AptitudesSection />
-      <LanguagesSection />
-    </section>
-    <section class='md:col-span-9 print:col-span-9 print:ml-[20px]'>
-      <HeroSection />
-      <AboutSection />
-      <ExperienceSection />
-      <EducationSection />
-      <CertificationsSection />
-    </section>
-  </div>
-</MainLayout>
+<html lang={lang}>
+  <head>
+    <Seo />
+  </head>
+  <body class='w-full'>
+    <main class='w-[700px] mx-auto max-w-full md:py-14 py-8'>
+      <div
+        class='grid print:gap-2 relative'
+      >
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <EducationSection />
+        <CertificationsSection />
+        <SkillsSection/>
+        <AptitudesSection />
+        <LanguagesSection />
+      </div>
+    </main>
+  </body>
+</html>

@@ -10,20 +10,20 @@ const lang = Astro.currentLocale
   class={clsx(
     "flex md:flex-row flex-col print:flex-row",
     "items-start md:items-center md:justify-between",
-    "gap-10 mb-10 md:mb-6 mx-6 lg:mx-0 ",
-    "print:mb-2 print:gap-6 print:mt-[30px]",
+    "gap-10 mb-2 mx-6 lg:mx-0 ",
+    "print:gap-6 print:mt-[20px]",
   )}
 >
   <img
     src='/avatar.webp'
     alt='portrait'
-    class='md:size-36 size-40 rounded-xl flex md:hidden print:hidden'
+    class='size-36 print:size-[155px] rounded-xl flex'
   />
 
-  <div class='grid gap-2 print:gap-3'>
+  <div class='grid gap-2'>
     <h1 class='font-size-title'>{resume.name}</h1>
 
-    <h2 class='text-sm font-mono max-w-lg leading-relaxed mb-0'>
+    <h2 class='max-w-3xl leading-relaxed mb-0'>
       {lang === "en" && resume.description.en}
       {lang === "es" && resume.description.es}
     </h2>

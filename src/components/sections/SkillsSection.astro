@@ -8,7 +8,7 @@ const stack = resume.stack
 const t = useTranslate(Astro.currentLocale)
 ---
 
-<Section class='print:mt-[50px] print:mx-0' title={t("SKILLS_TEXT")}>
+<Section class="print:mt-[80px]" title={t("SKILLS_TEXT")}>
   <div class='flex flex-wrap gap-3 print:gap-y-2 print:mt-5 mt-2'>
     {stack.map((tag) => <SkillCard name={tag} />)}
   </div>
